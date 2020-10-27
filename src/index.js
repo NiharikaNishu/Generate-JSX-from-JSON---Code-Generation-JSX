@@ -13,7 +13,7 @@ function toCamelCase(str) {
       return $1.toUpperCase();
     })
     .replce(/\s/g, "")
-    .replace(^(.)/, function ($1) {
+    .replace(/^(.)/, function ($1) {
       return $1.toLowerCase();
     });
 }
